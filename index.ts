@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 
@@ -29,7 +30,7 @@ if (student_interface.firstQuestion == "Create new student"){
          )
 }
 
- 
+let studentName = "students";
 
 
 let student = await inquirer.prompt({
@@ -128,7 +129,7 @@ console.log(chalk.greenBright("Congractulation..! you have successfully  enroll 
 console.log(chalk.bgGray("***********************STATUS**********************"));
 
 
-console.log(`Student Name: ${student_interface.students}`)
+console.log(`Student Name: ${student_interface.studentName}`)
 if (student.secondQuestion == "python"){
     console.log(" Course Name: python");
     
